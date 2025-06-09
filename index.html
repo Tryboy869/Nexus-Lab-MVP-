@@ -17,7 +17,7 @@
 <body class="bg-gray-900 text-white min-h-screen flex flex-col font-sans relative">
 
   <!-- Overlay teasing -->
-  <div class="absolute top-2 right-2 text-xs text-gray-400 italic">
+  <div class="absolute top-3 right-4 text-xs text-gray-400 italic z-10">
     Prototype v0.1 – Full AI builder coming soon...
   </div>
 
@@ -31,27 +31,27 @@
   </header>
 
   <!-- Main -->
-  <main class="flex-1 p-4 space-y-4 overflow-y-auto max-w-xl mx-auto w-full">
-    <div class="text-center text-sm text-gray-400 mb-2">
+  <main class="flex-1 px-6 py-8 space-y-6 overflow-y-auto max-w-2xl mx-auto w-full">
+    <div class="text-center text-sm text-gray-400">
       Powered by GPT-4o – Describe your MVP. We code it.
     </div>
 
     <!-- Chat display -->
-    <div id="chat-container" class="space-y-3"></div>
+    <div id="chat-container" class="space-y-4 min-h-[200px]"></div>
 
     <!-- Input bar -->
-    <div class="flex items-center space-x-2 mt-4">
+    <div class="flex items-center space-x-2">
       <input id="user-input" type="text" placeholder="Ex: Build a todo app with login"
-             class="flex-1 p-2 bg-gray-800 text-white border border-gray-600 rounded focus:outline-none focus:ring focus:ring-blue-500"/>
-      <button id="send-btn" class="px-4 py-2 bg-blue-600 rounded hover:bg-blue-700 font-medium">
+             class="flex-1 p-3 bg-gray-800 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+      <button id="send-btn" class="px-5 py-3 bg-blue-600 rounded-lg hover:bg-blue-700 font-semibold transition">
         Send
       </button>
     </div>
   </main>
 
   <!-- Footer -->
-  <footer class="p-4 bg-gray-800 text-center text-xs text-gray-500">
-    Nexus Studio • 2025 — MVP powered by OpenAI & GitHub API<br/>
+  <footer class="p-5 bg-gray-800 text-center text-xs text-gray-500 space-y-1">
+    <div>Nexus Studio • 2025 — MVP powered by OpenAI & GitHub API</div>
     <a href="SUPPORT.md" class="underline text-blue-400 hover:text-blue-500">Contact / Support</a>
   </footer>
 

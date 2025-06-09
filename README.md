@@ -1,4 +1,7 @@
 # 🚀 Nexus Lab MVP – Build Apps Just by Talking 💬⚡
+# 🚀 Nexus Lab MVP  
+> 📌 **Test it live here** 👉 [https://tryboy869.github.io/Nexus-Lab-MVP-/](https://tryboy869.github.io/Nexus-Lab-MVP-/)
+> NB : make you put your own okens and API 
 
 **Nexus Lab MVP** is a prototype mobile development assistant powered by GPT-4o. It allows you to transform ideas written in natural language into complete code projects, automatically pushed to GitHub.
 

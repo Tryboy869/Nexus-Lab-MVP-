@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nexus Lab MVP – Build Apps by Talking</title>
+  <title>🚀 Nexus Lab MVP | Build with GPT-4o</title>
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -14,18 +14,26 @@
   <!-- Favicon -->
   <link rel="icon" href="public/favicon.ico" />
 </head>
-<body class="bg-gray-900 text-white min-h-screen flex flex-col font-sans">
+<body class="bg-gray-900 text-white min-h-screen flex flex-col font-sans relative">
+
+  <!-- Overlay teasing -->
+  <div class="absolute top-2 right-2 text-xs text-gray-400 italic">
+    Prototype v0.1 – Full AI builder coming soon...
+  </div>
 
   <!-- Header -->
   <header class="p-4 bg-gray-800 flex items-center justify-center space-x-3 shadow-md">
     <img src="assets/logo.webp" alt="Nexus Logo" class="h-10 w-10 rounded-full"/>
-    <h1 class="text-2xl font-extrabold tracking-wide">Nexus Lab MVP</h1>
+    <div>
+      <h1 class="text-2xl font-extrabold tracking-wide">Nexus Lab MVP</h1>
+      <p class="text-sm text-gray-400">10% public prototype of our full MVP builder engine</p>
+    </div>
   </header>
 
   <!-- Main -->
   <main class="flex-1 p-4 space-y-4 overflow-y-auto max-w-xl mx-auto w-full">
     <div class="text-center text-sm text-gray-400 mb-2">
-      Powered by GPT-4o – Describe your app idea, and let the bot build it for you.
+      Powered by GPT-4o – Describe your MVP. We code it.
     </div>
 
     <!-- Chat display -->
@@ -43,7 +51,8 @@
 
   <!-- Footer -->
   <footer class="p-4 bg-gray-800 text-center text-xs text-gray-500">
-    Nexus Studio • 2025 — MVP powered by OpenAI & GitHub API
+    Nexus Studio • 2025 — MVP powered by OpenAI & GitHub API<br/>
+    <a href="SUPPORT.md" class="underline text-blue-400 hover:text-blue-500">Contact / Support</a>
   </footer>
 
   <!-- Scripts -->
@@ -52,4 +61,4 @@
   <script src="js/github.js"></script>
   <script src="js/app.js"></script>
 </body>
-    </html>
+        </html>

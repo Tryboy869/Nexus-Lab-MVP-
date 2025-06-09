@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom mobile tweaks (facultatif) */
+body {
+  font-family: 'Inter', sans-serif;
+}
+input::placeholder {
+  color: #aaa;
+}

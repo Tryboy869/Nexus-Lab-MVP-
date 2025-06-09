@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nexus Lobo MVP</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="public/favicon.ico" />
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col">
+  <header class="p-4 text-center text-xl font-bold bg-gray-800">
+    Nexus Lobo MVP
+  </header>
+
+  <main class="flex-1 flex flex-col p-4 space-y-4 overflow-y-auto">
+    <div id="chat-container" class="space-y-2"></div>
+
+    <div class="flex items-center space-x-2">
+      <input id="user-input" type="text" placeholder="Describe what you want..." class="flex-1 p-2 bg-gray-700 rounded"/>
+      <button id="send-btn" class="px-4 py-2 bg-blue-600 rounded">Send</button>
+    </div>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nexus Lobo MVP</title>
+  <title>Nexus Lab MVP – Build Apps by Talking</title>
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -14,23 +14,37 @@
   <!-- Favicon -->
   <link rel="icon" href="public/favicon.ico" />
 </head>
-<body class="bg-gray-900 text-white min-h-screen flex flex-col">
+<body class="bg-gray-900 text-white min-h-screen flex flex-col font-sans">
 
-  <!-- Header with logo -->
-  <header class="p-4 text-center bg-gray-800 flex items-center justify-center space-x-2">
-    <img src="assets/logo.webp" alt="Logo" class="h-8 w-8 rounded-full" />
-    <span class="text-xl font-bold">Nexus Lobo MVP</span>
+  <!-- Header -->
+  <header class="p-4 bg-gray-800 flex items-center justify-center space-x-3 shadow-md">
+    <img src="assets/logo.webp" alt="Nexus Logo" class="h-10 w-10 rounded-full"/>
+    <h1 class="text-2xl font-extrabold tracking-wide">Nexus Lab MVP</h1>
   </header>
 
-  <!-- Main chat interface -->
-  <main class="flex-1 flex flex-col p-4 space-y-4 overflow-y-auto">
-    <div id="chat-container" class="space-y-2"></div>
+  <!-- Main -->
+  <main class="flex-1 p-4 space-y-4 overflow-y-auto max-w-xl mx-auto w-full">
+    <div class="text-center text-sm text-gray-400 mb-2">
+      Powered by GPT-4o – Describe your app idea, and let the bot build it for you.
+    </div>
 
-    <div class="flex items-center space-x-2">
-      <input id="user-input" type="text" placeholder="Describe what you want..." class="flex-1 p-2 bg-gray-700 rounded"/>
-      <button id="send-btn" class="px-4 py-2 bg-blue-600 rounded hover:bg-blue-700">Send</button>
+    <!-- Chat display -->
+    <div id="chat-container" class="space-y-3"></div>
+
+    <!-- Input bar -->
+    <div class="flex items-center space-x-2 mt-4">
+      <input id="user-input" type="text" placeholder="Ex: Build a todo app with login"
+             class="flex-1 p-2 bg-gray-800 text-white border border-gray-600 rounded focus:outline-none focus:ring focus:ring-blue-500"/>
+      <button id="send-btn" class="px-4 py-2 bg-blue-600 rounded hover:bg-blue-700 font-medium">
+        Send
+      </button>
     </div>
   </main>
+
+  <!-- Footer -->
+  <footer class="p-4 bg-gray-800 text-center text-xs text-gray-500">
+    Nexus Studio • 2025 — MVP powered by OpenAI & GitHub API
+  </footer>
 
   <!-- Scripts -->
   <script src="config.js"></script>

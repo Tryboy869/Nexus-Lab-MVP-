@@ -2,10 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom mobile tweaks (facultatif) */
+/* ====== Global Styles ====== */
 body {
   font-family: 'Inter', sans-serif;
 }
+
+/* ====== Placeholder Text ====== */
 input::placeholder {
   color: #aaa;
+  font-style: italic;
+  opacity: 0.7;
 }
+
+/* ====== Scrollbar (amélioration visuelle) ====== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+/* ====== Chat Bubbles (si tu veux en ajouter dans JS plus tard) ====== */
+.user-message {
+  background-color: #2563eb; /* blue-600 */
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  align-self: flex-end;
+  max-width: 80%;
+}
+.bot-message {
+  background-color: #374151; /* gray-700 */
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  align-self: flex-start;
+  max-width: 80%;
+  }
